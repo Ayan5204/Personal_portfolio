@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayan Lal | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <head>
+        <link rel="icon" type="image/png" href="webdev.jpg">
+    </head>
+    
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Ayan Lal</div>
+            <div class="nav-links">
+                <ul id="menu">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                    <li><a href="Ayan Tech Resume (2).pdf" target="_blank" class="resume-btn">Resume</a></li>
+                </ul>
+                <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Ayan Lal</span></h1>
+            <h2>I'm a <span id="typed"></span></h2>
+            <a href="#Projects" class="cta-btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="About" class="about">
+        <div class="about-content">
+            <h2>About Me</h2><br><br>
+            <p>
+                Hi, I'm Ayan, a Full-Stack Web Developer (MERN) and DSA enthusiast with a background in Mechanical Engineering. 
+                My journey started with engineering, but my passion for technology led me to web development and problem-solving.
+            </p>
+            <p>
+                I’ve gained hands-on experience through internships at Cochin Shipyard Limited (CSL) and the National Informatics Centre (NIC), 
+                where I worked on real-world projects, enhancing my technical and analytical skills.
+            </p><br>
+            <h3>What I Do:</h3><br>
+            <ul>
+                <li>Full-Stack Development (MERN) – Building scalable and responsive web applications.</li>
+                <li>DSA & Problem-Solving – Writing optimized code for complex challenges.</li>
+                <li>Project Development – Working on impactful projects.</li>
+            </ul>
+            <br>
+            <p>
+                I love crafting efficient solutions and continuously learning to refine my skills. Let’s connect and create something great! 🚀
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="ayan_img.jpg" alt="Ayan's Picture">
+        </div>
+    </section>
+    
+
+    <section id="Skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill"><img src="html.png"> HTML & CSS</div>
+            <div class="skill"><img src="js.png"> JavaScript</div>
+            <div class="skill"><img src="nodejs.png"> Node.js</div>
+            <div class="skill"><img src="react.png"> React.js</div>
+            <div class="skill"><img src="sql.png"> Databases </div>
+            <div class="skill"><img src="cpp.png"> C++</div>
+        </div>
+    </section>
+
+    <section id="Projects" class="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project">
+                <h3>Python Calculator</h3>
+                <p>A simple calculator built with Python.</p>
+                <a href="https://github.com/Ayan5204/Python-Calculator" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Snake Game</h3>
+                <p>A fun snake game built using Python.</p>
+                <a href="https://github.com/Ayan5204/snake-game" target="_blank">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Weather App</h3>
+                <p>A real-time weather application.</p>
+                <a href="https://ayan5204.github.io/weather-page/" target="_blank">   View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="Contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/xpwpavdj" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        
+    </section>
+    <section id="social-media">
+        <h2>Connect with Me</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/ayan58" target="_blank">
+                <img src="linkedin.png" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/Ayan5204" target="_blank">
+                <img src="github.png" alt="GitHub">
+            </a>
+            <a href="https://wa.me/+919531865352" target="_blank">
+                <img src="whatsapp.png" alt="Twitter">
+            </a>
+            <a href="mailto:ayanlal5204@gmail.com">
+                <img src="email.png" alt="Email">
+            </a>
+        </div>
+    </section>
+    
+    <footer>
+        <p>© 2025 Ayan Lal | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.getElementById("menu").classList.toggle("show");
+        }
+
+        var typed = new Typed("#typed", {
+            strings: ["Web Developer", "Problem Solver", "Full-Stack Enthusiast"],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>
